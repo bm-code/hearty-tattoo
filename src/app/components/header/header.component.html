@@ -1,5 +1,26 @@
 <header class="container">
-    <nav>
+
+    <nav class="mobile">
+
+        <button [ngClass]="{'active-burger' : active}" (click)="activeMenu()" class="burger">
+            <div></div>
+            <div></div>
+        </button>
+        <ul [ngClass]="{'active' : active}" class="item-list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tipos de tatuaje</a></li>
+            <li><a href="#">Tipos de tatuaje</a></li>
+            <li><a href="#">Regala</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <ul>
+            <a href="#inicio"><img class="logo" src="../../../assets/img/logo-main.svg" alt=""></a>
+        </ul>
+    </nav>
+
+    <nav class="desktop">
         <ul>
             <a href="#inicio"><img class="logo" src="../../../assets/img/logo-main.svg" alt=""></a>
         </ul>

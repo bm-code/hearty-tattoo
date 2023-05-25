@@ -1,3 +1,25 @@
+.entrance__animation {
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    animation: OUT 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes OUT {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .inicio {
     padding: 9em 0;
 
