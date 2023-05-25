@@ -1,0 +1,23 @@
+.inicio {
+    padding: 9em 0;
+
+    .inicio__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .inicio__logo img {
+        margin: auto;
+        width: 500px;
+    }
+}
+
+.trabajos {
+    border-bottom: 1px solid white;
+}
+
+.regala {
+    border-bottom: 1px solid white;
+    padding-bottom: var(--block-spacing-vertical);
+}

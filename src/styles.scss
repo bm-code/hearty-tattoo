@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('/node_modules/@picocss/pico/css/pico.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;600;700&display=swap');
+
+
+::selection {
+    background-color: hsl(205, 16%, 77%);
+    color: #11191f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin-bottom: .5em;
+
+}
+
+h1 {
+    font-size: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+
+    &:focus {
+        background-color: transparent;
+    }
+
+}

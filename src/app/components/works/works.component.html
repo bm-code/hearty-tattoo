@@ -1,0 +1,22 @@
+<div class="grid trabajos__sect">
+    <div *ngIf="direction === 'left'" class="trabajos__sect-img">
+        <img [src]="img" alt="">
+        <h3>{{workTitle}}</h3>
+        <p>{{workDescription}}</p>
+    </div>
+
+    <div class="trabajos__sect-content">
+        <div class="trabajos__item">
+            <h2>{{title}}</h2>
+        </div>
+        <h3>Tatuajes de {{title}}</h3>
+        <p>{{tattooDescription}}</p>
+        <a href="#contacto">Reserva tu cita</a>
+    </div>
+
+    <div *ngIf="direction === 'right'" class="trabajos__sect-img">
+        <img [src]="img" alt="">
+        <h3>{{workTitle}}</h3>
+        <p>{{workDescription}}</p>
+    </div>
+</div>

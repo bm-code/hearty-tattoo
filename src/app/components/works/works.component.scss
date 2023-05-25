@@ -1,0 +1,31 @@
+.trabajos__sect {
+    padding: 2em 0;
+    column-gap: 2em;
+
+    .trabajos__sect-img {
+        // grid-column: span 2;
+
+        img {
+            margin-bottom: 1em;
+        }
+    }
+
+    .trabajos__sect-content {
+        .trabajos__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            padding: 4em 0;
+            margin-bottom: 1em;
+
+            h2 {
+                font-size: 60px;
+                font-weight: 100;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+footer {
+    background-color: white;
+
+    .footer__content {
+
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 1em 0;
+        margin: var(--block-spacing-vertical) 0;
+
+        h2,
+        li {
+            color: black;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+    .footer__text {
+        padding-bottom: 1em;
+        text-align: center;
+
+        p,
+        a {
+
+            color: black;
+        }
+    }
+}
