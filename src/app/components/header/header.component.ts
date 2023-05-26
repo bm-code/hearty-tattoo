@@ -16,4 +16,9 @@ export class HeaderComponent {
     this.active ? disableScroll.on() : disableScroll.off()
   }
 
+  deactiveMenu() {
+    this.active = false;
+    disableScroll.off()
+  }
+
 }

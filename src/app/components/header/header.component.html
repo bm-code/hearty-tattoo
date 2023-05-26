@@ -7,12 +7,11 @@
             <div></div>
         </button>
         <ul [ngClass]="{'active' : active}" class="item-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tipos de tatuaje</a></li>
-            <li><a href="#">Tipos de tatuaje</a></li>
-            <li><a href="#">Regala</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio" (click)="deactiveMenu()">Inicio</a></li>
+            <li><a href="#trabajos" (click)="deactiveMenu()">Tipos de tatuaje</a></li>
+            <li><a href="#regala" (click)="deactiveMenu()">Regala</a></li>
+            <li><a href="#galeria" (click)="deactiveMenu()">Galería</a></li>
+            <li><a href="#contacto" (click)="deactiveMenu()">Contacto</a></li>
         </ul>
 
         <ul>
@@ -25,12 +24,11 @@
             <a href="#inicio"><img class="logo" src="../../../assets/img/logo-main.svg" alt=""></a>
         </ul>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tipos de tatuaje</a></li>
-            <li><a href="#">Tipos de tatuaje</a></li>
-            <li><a href="#">Regala</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#trabajos">Tipos de tatuaje</a></li>
+            <li><a href="#regala">Regala</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
