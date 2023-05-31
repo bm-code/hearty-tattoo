@@ -1,0 +1,16 @@
+.sobre-mi__container {
+    column-gap: 2em;
+
+    .sobre-mi__container-img {
+        img {
+            border-radius: 150px;
+        }
+    }
+
+    .sobre-mi__container-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

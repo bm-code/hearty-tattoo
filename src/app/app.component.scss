@@ -42,4 +42,9 @@
 .regala {
     border-bottom: 1px solid white;
     padding-bottom: var(--block-spacing-vertical);
+
+    .regala__content-right {
+        display: flex;
+        align-items: center;
+    }
 }

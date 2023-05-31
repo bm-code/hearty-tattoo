@@ -7,6 +7,7 @@ import { WorksComponent } from './components/works/works.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EntranceComponent } from './components/entrance/entrance.component';
+import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EntranceComponent } from './components/entrance/entrance.component';
     WorksComponent,
     GalleryComponent,
     FooterComponent,
-    EntranceComponent
+    EntranceComponent,
+    SobreMiComponent
   ],
   imports: [
     BrowserModule
