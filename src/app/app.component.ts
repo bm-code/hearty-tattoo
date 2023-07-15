@@ -36,6 +36,8 @@ export class AppComponent implements OnInit {
         this.entrance = false;
         sessionStorage.setItem('entrance', this.entrance.toString())
         disableScroll.off();
+        window.location.reload()
+
       }, 5000);
     }
   }
