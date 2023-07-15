@@ -1,6 +1,7 @@
 header {
     border-bottom: 1px solid white;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     background-color: #11191fba;
     z-index: 2;
