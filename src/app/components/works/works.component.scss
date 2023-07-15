@@ -1,9 +1,21 @@
 .trabajos__sect {
     padding: 2em 0;
     column-gap: 2em;
+    display: flex;
+    flex-direction: column;
+
+    .trabajos__sect-content {
+        order: 1;
+    }
 
     .trabajos__sect-img {
         // grid-column: span 2;
+        order: 2;
+        margin-top: 2em;
+
+        .slider {
+            height: 250px;
+        }
 
         img {
             // margin-bottom: 1em;
@@ -19,11 +31,11 @@
             padding: 4em 0;
             margin-bottom: 1em;
             background: url('../../../assets/img/ondas.svg');
-                background-size: cover;
-                filter: brightness(100);
+            background-size: cover;
+            filter: brightness(100);
 
             h2 {
-                font-size: 50px;
+                font-size: 35px;
                 font-weight: 100;
                 text-transform: uppercase;
                 margin: 0;
@@ -33,6 +45,7 @@
         }
     }
 }
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -53,4 +66,24 @@
 
 .slider img.fadeIn {
     opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .trabajos__sect {
+        display: grid;
+
+        .trabajos__sect-img {
+            // grid-column: span 2;
+            order: 1;
+            margin-top: 0;
+        }
+
+        .trabajos__sect-content {
+            .trabajos__item {
+                h2 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
 }

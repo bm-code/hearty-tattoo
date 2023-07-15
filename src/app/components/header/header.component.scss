@@ -1,5 +1,11 @@
 header {
     border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+    background-color: #11191fba;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
     ul,
     a {
@@ -7,18 +13,17 @@ header {
     }
 
     .logo {
-        max-width: 200px;
+        max-width: 290px;
         width: 100%;
-        padding: .5em;
     }
 
     a {
         text-decoration: none;
         transition: all .3s;
-        
-            &:hover {
-                transform: translateY(-5px);
-            }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 }
 
@@ -41,6 +46,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 2;
 
         &.active {
             display: flex;
