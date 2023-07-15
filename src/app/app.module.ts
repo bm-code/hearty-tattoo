@@ -8,6 +8,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EntranceComponent } from './components/entrance/entrance.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     SobreMiComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

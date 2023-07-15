@@ -13,6 +13,9 @@ html {
     scroll-behavior: smooth;
 }
 
+[data-theme=dark] {
+    --background-color: #0a0b0b;
+}
 body {
     font-family: 'Wix Madefor Display', sans-serif;
 }

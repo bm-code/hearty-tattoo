@@ -1,22 +1,24 @@
-<div class="grid trabajos__sect">
-    <div *ngIf="direction === 'left'" class="trabajos__sect-img">
-        <img [src]="img" alt="">
-        <h3>{{workTitle}}</h3>
-        <p>{{workDescription}}</p>
+<div class="grid trabajos__sect" data-aos="fade-up" data-aos-offset="100">
+    <div *ngIf="direction === 'left'" class="trabajos__sect-img" data-aos="fade-up" data-aos-offset="100">
+        <div class="slider" [style.visibility]="'hidden'" data-aos="fade-up" data-aos-offset="100">
+            <img *ngFor="let image of img" [src]="image" alt="Slider Image"
+                [class.fadeIn]="currentImageIndex === img.indexOf(image)">
+        </div>
     </div>
 
     <div class="trabajos__sect-content">
-        <div class="trabajos__item">
+        <div data-aos="fade-up" data-aos-offset="100" class="trabajos__item">
             <h2>{{title}}</h2>
         </div>
-        <h3>Tatuajes de {{title}}</h3>
-        <p>{{tattooDescription}}</p>
-        <a href="#contacto">Reserva tu cita</a>
+        <h3 data-aos="fade-up" data-aos-offset="100">Tatuajes de {{title}}</h3>
+        <p data-aos="fade-up" data-aos-offset="100">{{tattooDescription}}</p>
+        <a data-aos="fade-up" data-aos-offset="100" href="#contacto">Reserva tu cita</a>
     </div>
 
-    <div *ngIf="direction === 'right'" class="trabajos__sect-img">
-        <img [src]="img" alt="">
-        <h3>{{workTitle}}</h3>
-        <p>{{workDescription}}</p>
+    <div *ngIf="direction === 'right'" class="trabajos__sect-img" data-aos="fade-up" data-aos-offset="100">
+        <div class="slider" [style.visibility]="'hidden'" data-aos="fade-up" data-aos-offset="100">
+            <img *ngFor="let image of img" [src]="image" alt="Slider Image"
+                [class.fadeIn]="currentImageIndex === img.indexOf(image)">
+        </div>
     </div>
 </div>

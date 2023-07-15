@@ -6,48 +6,51 @@
 
 <main class="container">
 
-  <section class="grid inicio" id="inicio">
-    <div class="inicio__text">
+  <section data-aos="fade-up" data-aos-offset="100" class="grid inicio" id="inicio">
+    <div data-aos="fade-up" [@fadeIn] class="inicio__text">
       <h1>Descubre la pasión que late bajo la piel en Hearty Tattoo.
       </h1>
       <a href="#trabajos">Conoce nuestros trabajos</a>
     </div>
-    <div class="inicio__logo">
+    <div [@fadeIn] class="inicio__logo">
       <img src="../assets/img/logo-animated.svg" width="300" height="300" alt="">
     </div>
   </section>
 
-  <section class="trabajos" id="trabajos">
+  <section data-aos="fade-up" data-aos-offset="100" class="trabajos" id="trabajos">
 
-    <app-works [title]="'Línea Fina'" [img]="'../assets/img/linea-fina.jpg'" [workTitle]="'Descripción del trabajo'"
+    <app-works data-aos="fade-up" data-aos-offset="100" [title]="'Línea Fina'" [img]="lineaFinaGallery"
+      [workTitle]="'Descripción del trabajo'"
       [tattooDescription]="'Cada tatuaje de línea fina es una obra maestra en sí misma, con detalles meticulosos y una estética sofisticada. Ya sea que desees un tatuaje minimalista, una figura geométrica o una delicada ilustración, nuestro equipo experto está listo para plasmar tu visión en tu piel con una técnica impecable.'"
       [workDescription]="'Nuestra sección de tatuajes de línea fina es un verdadero deleite para los amantes de la delicadeza y la precisión. Aquí, nuestros talentosos artistas han dominado el arte de crear diseños intrincados con líneas finas y elegantes. '"
       [direction]="'left'"></app-works>
 
-    <app-works [title]="'Puntillismo de arrastre'" [img]="'../assets/img/puntillismo-arrastre.jpg'"
+    <app-works data-aos="fade-down" data-aos-offset="100" [title]="'Puntillismo de arrastre'" [img]="puntillismoGallery"
       [workTitle]="'Descripción del trabajo'"
       [tattooDescription]="'Nuestros artistas expertos han perfeccionado el puntillismo de arrastre para brindarte tatuajes con una estética impresionante y detalles increíbles. Ya sea que busques un diseño abstracto o una ilustración detallada, nuestro equipo se asegurará de que tu tatuaje sea un verdadero trabajo de arte.'"
       [workDescription]="'En nuestra sección de Puntillismo de arrastre, encontrarás tatuajes que fusionan la precisión de los puntos con la sutileza de los trazos. Esta técnica combina pequeños puntos meticulosamente colocados con trazos suaves y arrastrados, creando una apariencia única y fascinante.'"
       [direction]="'right'"></app-works>
 
-    <app-works [title]="'BlackWork'" [img]="'../assets/img/blackwork.jpg'" [workTitle]="'Descripción del trabajo'"
+    <app-works data-aos="fade-up" data-aos-offset="100" [title]="'BlackWork'" [img]="blackworkGallery"
+      [workTitle]="'Descripción del trabajo'"
       [tattooDescription]="'Ya sea que busques un diseño intrincado inspirado en la naturaleza o un tatuaje geométrico abstracto, nuestro equipo experto te brindará un resultado impresionante y duradero.'"
       [workDescription]="'Sumérgete en el mundo oscuro y cautivador de nuestra sección de Blackwork. Los tatuajes de Blackwork se caracterizan por sus audaces diseños en negro sólido y la ausencia de sombreados. Nuestros artistas talentosos han perfeccionado esta técnica y son capaces de crear tatuajes impactantes con una estética poderosa y misteriosa.'"
       [direction]="'left'"></app-works>
 
-    <app-works [title]="'Aquarela'" [img]="'../assets/img/aquarela.jpg'" [workTitle]="'Descripción del trabajo'"
+    <app-works data-aos="fade-up" data-aos-offset="100" [title]="'Aquarela'" [img]="aquarelaGallery"
+      [workTitle]="'Descripción del trabajo'"
       [tattooDescription]="'Los tatuajes de Aquarela se caracterizan por sus trazos sueltos y fluidos, creando un efecto artístico único. Desde flores y animales hasta paisajes y retratos, nuestro equipo talentoso capturará tu visión y la transformará en una obra de arte en movimiento.'"
       [workDescription]="'Si buscas tatuajes llenos de vida, color y suavidad, nuestra sección de Aquarela es el lugar perfecto para ti. Inspirados en la belleza de la acuarela, nuestros artistas expertos pueden transformar tu piel en un lienzo lleno de colores vibrantes y mezclas sutiles.'"
       [direction]="'right'"></app-works>
 
-    <app-works [title]="'Composiciones'" [img]="'../assets/img/composiciones.jpg'"
+    <app-works data-aos="fade-up" data-aos-offset="100" [title]="'Composiciones'" [img]="composicionesGallery"
       [workTitle]="'Descripción del trabajo'"
       [tattooDescription]="'Ya sea que desees combinar diferentes estilos, elementos simbólicos o imágenes que te inspiren, nuestro equipo creativo te guiará en cada paso del proceso. Con una atención meticulosa a los detalles y una pasión por la creatividad, estamos comprometidos a crear una obra maestra en tu piel que sea verdaderamente tuya.'"
       [workDescription]="'Nuestra sección de Composiciones es el lugar ideal para aquellos que buscan un tatuaje personalizado y único que cuente una historia. Aquí, nuestros artistas expertos trabajarán contigo para diseñar una composición especial que refleje tus ideas, emociones y significados personales.'"
-      [direction]="'left'"></app-works>
+      [direction]="'left'"></app-works> 
   </section>
 
-  <section class="regala" id="regala">
+  <section data-aos="fade-up" data-aos-offset="100" class="regala" id="regala">
     <div class="regala__content grid">
       <div class="regala__content-left">
         <h2>¡Regala arte y pasión con nuestra Tarjeta de Regalo!</h2>
@@ -64,11 +67,11 @@
     </div>
   </section>
 
-  <app-gallery></app-gallery>
+  <app-gallery data-aos="fade-up" data-aos-offset="100"></app-gallery>
 
-  <app-sobre-mi></app-sobre-mi>
+  <app-sobre-mi data-aos="fade-up" data-aos-offset="100"></app-sobre-mi>
 
-  <section class="contacto-container" id="contacto">
+  <section data-aos="fade-up" data-aos-offset="100" class="contacto-container" id="contacto">
     <div class="contacto grid">
       <div class="contacto__left">
         <div class="cordoba">
