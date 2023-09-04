@@ -4,48 +4,52 @@
 
 <app-header></app-header>
 
-<main class="container">
-
-  <section data-aos="fade-up" data-aos-offset="100" class="grid inicio" id="inicio">
+<section data-aos="fade-up" data-aos-offset="100" class="grid inicio video-section" id="inicio">
+  <video id="backgroundVideo" autoplay muted loop>
+    <source src="assets/img/inicio-video.mp4" type="video/mp4">
+  </video>
+  <div class="container inicio">
     <div data-aos="fade-up" [@fadeIn] class="inicio__text">
-      <h1>Descubre la pasion que late bajo la piel en Hearty Tattoo.
+      <h1>Descubre la pasión que late bajo la piel en Hearty Tattoo
       </h1>
       <a href="#trabajos">Conoce nuestros trabajos</a>
-    </div>
-    <div [@fadeIn] class="inicio__logo">
-      <img src="../assets/img/logo-animated.svg" width="300" height="300" alt="">
-    </div>
-  </section>
+      </div>
+      <div [@fadeIn] class="inicio__logo">
+        <img src="../assets/img/logo-animated.svg" width="300" height="300" alt="">
+      </div>
+  </div>
+    </section>
 
+<main class="container">
   <section data-aos="fade-up" data-aos-offset="100" class="trabajos" id="trabajos">
 
     <app-works data-aos="fade-up" data-aos-offset="100" [title]="'Linea Fina'" [img]="lineaFinaGallery"
       [workTitle]="'Descripción del trabajo'"
-      [tattooDescription]="'Cada tatuaje de línea fina es una obra maestra en sí misma, con detalles meticulosos y una estética sofisticada. Ya sea que desees un tatuaje minimalista, una figura geométrica o una delicada ilustración, nuestro equipo experto está listo para plasmar tu visión en tu piel con una técnica impecable.'"
+      [tattooDescription]="'Cada tatuaje de línea fina es una obra maestra en sí misma, con detalles meticulosos y una estética sofisticada. Suelen ser tatuajes pequeños, discretos y cuentan con un nivel de detalle increible.'"
       [workDescription]="'Nuestra sección de tatuajes de línea fina es un verdadero deleite para los amantes de la delicadeza y la precisión. Aquí, nuestros talentosos artistas han dominado el arte de crear diseños intrincados con líneas finas y elegantes. '"
       [direction]="'left'"></app-works>
 
     <app-works data-aos="fade-down" data-aos-offset="100" [title]="'Puntillismo de arrastre'" [img]="puntillismoGallery"
       [workTitle]="'Descripción del trabajo'"
-      [tattooDescription]="'Nuestros artistas expertos han perfeccionado el puntillismo de arrastre para brindarte tatuajes con una estética impresionante y detalles increíbles. Ya sea que busques un diseño abstracto o una ilustración detallada, nuestro equipo se asegurará de que tu tatuaje sea un verdadero trabajo de arte.'"
+      [tattooDescription]="'La principal característica es que son Tattoos en blanco y negro. El sombreado se realiza con una sola aguja de línea fina. Esta técnica se caracteriza por tatuajes mucho menos dolorosos, permite una textura única, y además se curan ligeramente más rápido ya que la `agresión´ es menor que en un relleno convencional. Es mi técnica favorita y por ello he perfeccionado el puntillismo de arrastre para brindarte tatuajes con una estética impresionante y detalles increíbles.'"
       [workDescription]="'En nuestra sección de Puntillismo de arrastre, encontrarás tatuajes que fusionan la precisión de los puntos con la sutileza de los trazos. Esta técnica combina pequeños puntos meticulosamente colocados con trazos suaves y arrastrados, creando una apariencia única y fascinante.'"
       [direction]="'right'"></app-works>
 
     <app-works data-aos="fade-up" data-aos-offset="100" [title]="'BlackWork'" [img]="blackworkGallery"
       [workTitle]="'Descripción del trabajo'"
-      [tattooDescription]="'Ya sea que busques un diseño intrincado inspirado en la naturaleza o un tatuaje geométrico abstracto, nuestro equipo experto te brindará un resultado impresionante y duradero.'"
+      [tattooDescription]="'Esta técnica apuesta `todo al negro´. El blackwork, como su propio nombre indica, es un estilo de tatuaje en el que solo se trabaja con tinta negra. Se caracteriza por el uso de altos contrastes, sin sombras ni tonos grises. Las líneas son muy precisas y se aplican degradados con texturas, puntos o tramas.'"
       [workDescription]="'Sumérgete en el mundo oscuro y cautivador de nuestra sección de Blackwork. Los tatuajes de Blackwork se caracterizan por sus audaces diseños en negro sólido y la ausencia de sombreados. Nuestros artistas talentosos han perfeccionado esta técnica y son capaces de crear tatuajes impactantes con una estética poderosa y misteriosa.'"
       [direction]="'left'"></app-works>
 
     <app-works data-aos="fade-up" data-aos-offset="100" [title]="'Aquarela'" [img]="aquarelaGallery"
       [workTitle]="'Descripción del trabajo'"
-      [tattooDescription]="'Los tatuajes de Aquarela se caracterizan por sus trazos sueltos y fluidos, creando un efecto artístico único. Desde flores y animales hasta paisajes y retratos, nuestro equipo talentoso capturará tu visión y la transformará en una obra de arte en movimiento.'"
+      [tattooDescription]="'Para crear este efecto tan bonito y elegante, nos basamos en las pinceladas o manchas que creamos con un pilcel, para ello diluimos los colores en agua a la vez que realizan mezclas entre ellos, generando luminosidad y juegos de profundidad.'"
       [workDescription]="'Si buscas tatuajes llenos de vida, color y suavidad, nuestra sección de Aquarela es el lugar perfecto para ti. Inspirados en la belleza de la acuarela, nuestros artistas expertos pueden transformar tu piel en un lienzo lleno de colores vibrantes y mezclas sutiles.'"
       [direction]="'right'"></app-works>
 
     <app-works data-aos="fade-up" data-aos-offset="100" [title]="'Composiciones'" [img]="composicionesGallery"
       [workTitle]="'Descripción del trabajo'"
-      [tattooDescription]="'Ya sea que desees combinar diferentes estilos, elementos simbólicos o imágenes que te inspiren, nuestro equipo creativo te guiará en cada paso del proceso. Con una atención meticulosa a los detalles y una pasión por la creatividad, estamos comprometidos a crear una obra maestra en tu piel que sea verdaderamente tuya.'"
+      [tattooDescription]="'Ya sea que desees combinar diferentes estilos, elementos simbólicos o imágenes que te inspiren, y no sepas cómo representarlo, contacta conmigo, estoy comprometida a crear una obra maestra en tu piel que sea verdaderamente tuya.'"
       [workDescription]="'Nuestra sección de Composiciones es el lugar ideal para aquellos que buscan un tatuaje personalizado y único que cuente una historia. Aquí, nuestros artistas expertos trabajarán contigo para diseñar una composición especial que refleje tus ideas, emociones y significados personales.'"
       [direction]="'left'"></app-works>
   </section>

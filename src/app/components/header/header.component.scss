@@ -3,10 +3,12 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-color: #11191fba;
+    background-color: #0a0b0b88;
     z-index: 2;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    width: 100%;
+        max-width: 1140px !important;
 
     ul,
     a {
@@ -14,7 +16,7 @@ header {
     }
 
     .logo {
-        max-width: 290px;
+        max-width: 230px;
         width: 100%;
     }
 
