@@ -1,6 +1,5 @@
 footer {
-
-    background-color: white;
+    background-color: #b1b1b1;
 
     .floating-whatsapp {
         position: fixed;
@@ -36,10 +35,33 @@ footer {
         border-bottom: 1px solid black;
         padding: 1em 0;
         margin: var(--block-spacing-vertical) 0;
-
-        h2,
+        
+        .footer__content-logo {
+                img {
+                    max-width: 200px;
+                }
+            }
+        
+            h2 {
+                color: black;
+            }
         li {
-            color: black;
+            i-feather {
+                    margin-right: .2em;
+                }
+            
+                a {
+                color: black;
+                text-decoration: none;
+                
+                }
+                
+                .icon-img {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
         }
 
         li {

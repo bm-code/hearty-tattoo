@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { EntranceComponent } from './components/entrance/entrance.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IconsModule } from './icons/icons.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

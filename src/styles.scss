@@ -3,10 +3,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;600;700&display=swap');
 
-@font-face {
-    font-family: 'FunkySignature';
-        src: url('./fonts/FunkySignature.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+// @font-face {
+//     font-family: 'FunkySignature';
+//     src: url('./fonts/FunkySignature.ttf') format('truetype');
+// }
 
 
 ::selection {
@@ -28,7 +30,8 @@ body {
 
 h1,
 .collegiate {
-    font-family: 'FunkySignature', sans-serif;
+    // font-family: 'FunkySignature', sans-serif;
+        font-family: 'Dancing Script', cursive;
 }
 
 h2,
@@ -62,4 +65,13 @@ a {
         background-color: transparent;
     }
 
+}
+i-feather {
+    svg {
+        fill: none;
+
+        .color {
+            fill: currentColor;
+        }
+    }
 }
