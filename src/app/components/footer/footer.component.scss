@@ -30,6 +30,9 @@ footer {
     }
 
     .footer__content {
+        display: flex;
+            flex-wrap: wrap;
+            width: 100%;
 
         border-top: 1px solid black;
         border-bottom: 1px solid black;
@@ -37,10 +40,28 @@ footer {
         margin: var(--block-spacing-vertical) 0;
         
         .footer__content-logo {
+            flex: 0 0 100%;
+            
+                @media screen and (min-width: 992px) {
+                    flex: 0 0 30%;
+                }
+            
+                align-self: center;
                 img {
                     max-width: 200px;
+                    display: block;
+                        margin: auto;
                 }
-            }
+}
+
+.footer__social,
+.footer__contact {
+    flex: 0 0 45%;
+
+    @media screen and (min-width: 992px) {
+        flex: 0 0 30%;
+    }
+}
         
             h2 {
                 color: black;
