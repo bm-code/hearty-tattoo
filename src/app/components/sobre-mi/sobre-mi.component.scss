@@ -4,13 +4,7 @@
     .sobre-mi__container-img {
         img {
             border-radius: 20px;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease-in-out;
             margin-bottom: 1em;
-
-            &:hover {
-                filter: grayscale(0%);
-            }
         }
 
     }

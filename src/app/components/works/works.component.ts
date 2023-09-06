@@ -1,7 +1,8 @@
 import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import 'slick-carousel';
-import AOS from 'aos';
+// import Aos from 'aos';
 import { AosOptions } from 'aos';
+import * as Aos from 'aos';
 
 
 
@@ -31,9 +32,9 @@ export class WorksComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
+    Aos.init();
     this.preloadImages();
     this.startSlider();
-    AOS.init();
   }
 
   ngOnDestroy() {
@@ -54,14 +55,16 @@ export class WorksComponent implements OnInit, OnDestroy {
   }
 
   showSlider() {
-    const sliderElement = this.elementRef.nativeElement.querySelector('.slider');
+    const sliderElement = this.elementRef.nativeElement.querySelector('.slider');    
     sliderElement.style.visibility = 'visible';
   }
 
   startSlider() {
     this.interval = setInterval(() => {
+      console.log(this.currentImageIndex);
+      
       this.showNextImage();
-    }, 2000); // Cambia las imágenes cada 3 segundos (ajusta el valor según tus necesidades)
+    }, 2000);
   }
 
   stopSlider() {
@@ -75,7 +78,5 @@ export class WorksComponent implements OnInit, OnDestroy {
   showPreviousImage() {
     this.currentImageIndex = (this.currentImageIndex - 1 + this.img.length) % this.img.length;
   }
-
-
 
 }

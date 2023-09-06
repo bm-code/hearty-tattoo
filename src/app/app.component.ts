@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import disableScroll from 'disable-scroll';
-import AOS from 'aos';
+import * as Aos from 'aos';
 import { AosOptions } from 'aos';
 
 @Component({
@@ -27,8 +27,7 @@ export class AppComponent implements OnInit {
   blackworkGallery: string[] = ['../assets/img/blackwork.jpg', '../assets/img/blackwork-2.jpg',]
 
   ngOnInit(): void {
-    AOS.init();
-
+    Aos.init();
     if (sessionStorage.getItem('entrance') === null) {
       disableScroll.on();
       this.entrance = true;

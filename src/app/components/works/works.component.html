@@ -6,11 +6,11 @@
         </div>
     </div>
 
-    <div class="trabajos__sect-content">
+    <div class="trabajos__sect-content" [ngClass]="{rightDirection: direction === 'right'}">
         <div data-aos="fade-up" data-aos-offset="100" class="trabajos__item">
             <h2 class="collegiate">{{title}}</h2>
         </div>
-        <h3 data-aos="fade-up" data-aos-offset="100">Tatuajes de {{title}}</h3>
+        <!-- <h3 data-aos="fade-up" data-aos-offset="100">Tatuajes de {{title}}</h3> -->
         <p data-aos="fade-up" data-aos-offset="100">{{tattooDescription}}</p>
         <a data-aos="fade-up" data-aos-offset="100" href="#contacto">Reserva tu cita</a>
     </div>

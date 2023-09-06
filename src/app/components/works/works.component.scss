@@ -1,88 +1,146 @@
-.trabajos__sect {
-    padding: 2em 0;
-    column-gap: 2em;
-    display: flex;
-    flex-direction: column;
+// .trabajos__sect {
+//     padding: 2em 0;
+//     column-gap: 2em;
+//     display: flex;
+//     flex-direction: column;
 
-    .trabajos__sect-content {
-        order: 1;
-    }
+//     .trabajos__sect-content {
+//         order: 1;
+//     }
+
+//     .trabajos__sect-img {
+//         // grid-column: span 2;
+//         order: 2;
+//         margin-top: 2em;
+
+//         .slider {
+//             height: 250px;
+//         }
+//     }
+
+//     .trabajos__sect-content {
+//         .trabajos__item {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             border: 1px solid white;
+//             padding: 4em 0;
+//             margin-bottom: 1em;
+//             background: url('../../../assets/img/ondas.svg');
+//             background-size: cover;
+//             @media screen and (min-width: 992px) {
+//                 filter: brightness(30);
+//                 }
+//             h2 {
+//                 font-size: 35px;
+//                 font-weight: 100;
+//                 // text-transform: uppercase;
+//                 margin: 0;
+//                 padding: 10px;
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }
+// .slider {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
+// }
+// .slider img {
+//     max-width: 100%;
+//     height: auto;
+//     margin-bottom: 10px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     opacity: 0;
+//     transition: opacity 0.5s ease-in-out;
+// }
+// .slider img.fadeIn {
+//     opacity: 1;
+// }
+
+// @media screen and (min-width: 768px) {
+//     .trabajos__sect {
+//         display: grid;
+
+//         .trabajos__sect-img {
+//             // grid-column: span 2;
+//             order: 1;
+//             margin-top: 0;
+//         }
+
+//         .trabajos__sect-content {
+//             .trabajos__item {
+//                 h2 {
+//                     font-size: 70px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.trabajos__sect {
+    display: flex;
+    justify-content: center;
+    margin: 6em auto;
 
     .trabajos__sect-img {
-        // grid-column: span 2;
-        order: 2;
-        margin-top: 2em;
-
-        .slider {
-            height: 250px;
-        }
+        flex: 0 0 45%;
     }
 
     .trabajos__sect-content {
-        .trabajos__item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid white;
-            padding: 4em 0;
-            margin-bottom: 1em;
-            background: url('../../../assets/img/ondas.svg');
-            background-size: cover;
-            @media screen and (min-width: 992px) {
-            filter: brightness(30);
-            
-            
-                        }
-            h2 {
-                font-size: 35px;
-                font-weight: 100;
-                // text-transform: uppercase;
-                margin: 0;
-                padding: 10px;
-                text-align: center;
-            }
+        flex: 0 0 45%;
+        align-self: flex-end;
+        margin-bottom: 1em;
+        margin-left: -4em;
+        padding: 1em;
+        background-color: white;
+        box-shadow: 9px 10px 43px 8px rgba(0,0,0,0.24);
+        z-index: 1;
+        border-radius: 3px;
+
+        &.rightDirection{
+            margin-left: 0;
+            margin-right: -4em;
+            box-shadow: 9px 10px 43px 8px rgba(0,0,0,0.24);
+        }
+
+        h2{
+            font-size: 50px;
+        }
+
+        h2,
+        h3,
+        p,
+        a {
+            color: black;
         }
     }
-}
 
-.slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+    .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 650px;
 
-.slider img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.slider img.fadeIn {
-    opacity: 1;
-}
-
-@media screen and (min-width: 768px) {
-    .trabajos__sect {
-        display: grid;
-
-        .trabajos__sect-img {
-            // grid-column: span 2;
-            order: 1;
-            margin-top: 0;
+         img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
 
-        .trabajos__sect-content {
-            .trabajos__item {
-                h2 {
-                    font-size: 70px;
-                }
-            }
+         img.fadeIn {
+            opacity: 1;
         }
+
     }
 }
