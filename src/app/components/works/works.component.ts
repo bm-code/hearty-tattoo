@@ -60,9 +60,7 @@ export class WorksComponent implements OnInit, OnDestroy {
   }
 
   startSlider() {
-    this.interval = setInterval(() => {
-      console.log(this.currentImageIndex);
-      
+    this.interval = setInterval(() => {      
       this.showNextImage();
     }, 2000);
   }

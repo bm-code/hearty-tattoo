@@ -8,12 +8,11 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
 
   images: string[] = [
-    'https://picsum.photos/730/510?random',
-    'https://picsum.photos/730/510?random',
-    'https://picsum.photos/730/510?random',
-    'https://picsum.photos/730/510?random',
-    'https://picsum.photos/730/510?random',
-    'https://picsum.photos/730/510?random',
+    '../../../assets/img/galeria-1.jpg',
+    '../../../assets/img/galeria-2.jpg',
+    '../../../assets/img/galeria-3.jpg',
+    '../../../assets/img/galeria-4.jpg',
+    '../../../assets/img/galeria-5.jpg',
   ]
 
 }
