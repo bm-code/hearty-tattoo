@@ -1,4 +1,4 @@
-<div class="grid trabajos__sect" data-aos="fade-up" data-aos-offset="100">
+<div class="grid trabajos__sect" [ngClass]="{leftDirection: direction === 'left'}" data-aos="fade-up" data-aos-offset="100">
     <div *ngIf="direction === 'left'" class="trabajos__sect-img" data-aos="fade-up" data-aos-offset="100">
         <div class="slider" [style.visibility]="'hidden'" data-aos="fade-up" data-aos-offset="100">
             <img *ngFor="let image of img" [src]="image" alt="Slider Image"
