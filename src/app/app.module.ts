@@ -10,6 +10,8 @@ import { EntranceComponent } from './components/entrance/entrance.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsModule } from './icons/icons.module';
+import { MasonryGalleryComponent } from './components/masonry-gallery/masonry-gallery.component';
+
 
 
 @NgModule({
@@ -20,12 +22,13 @@ import { IconsModule } from './icons/icons.module';
     GalleryComponent,
     FooterComponent,
     EntranceComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    MasonryGalleryComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    IconsModule
+    IconsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
