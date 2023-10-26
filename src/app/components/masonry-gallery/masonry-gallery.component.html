@@ -3,7 +3,7 @@
     <h2 class="collegiate">Galeria de trabajos</h2>
 
     <div class="gallery full-width" >
-        <img (click)="openModal(img)" [src]="img" alt="Imagen de la galería" *ngFor="let img of images.slice(0, initialImageCount)" data-aos="fade-up" data-aos-offset="100" loading="eager" >
+        <img (click)="openModal(img)" [src]="img" alt="Imagen de la galería" *ngFor="let img of images.slice(0, initialImageCount)" data-aos="fade-up" data-aos-offset="100" loading="eager">
     </div>
     <button class="show-more" *ngIf="initialImageCount < images.length" (click)="showMoreImages()">Ver Más <i-feather name="arrow-down"></i-feather></button>
 
