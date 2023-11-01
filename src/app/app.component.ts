@@ -22,7 +22,14 @@ export class AppComponent implements OnInit {
 
   puntillismoGallery: string[] = ['../assets/img/puntillismo-arrastre.jpg', '../assets/img/puntillismo-arrastre-2.jpg']
 
-  aquarelaGallery: string[] = ['../assets/img/aquarela.jpg', '../assets/img/aquarela-2.jpg',]
+  aquarelaGallery: string[] = [
+    '../assets/img/aquarela.jpg',
+    '../assets/img/aquarela-2.jpg',
+    '../assets/img/aquarela-3.jpg',
+    '../assets/img/aquarela-4.jpg',
+    '../assets/img/aquarela-5.jpg',
+    '../assets/img/aquarela-6.jpg',
+    '../assets/img/aquarela-7.jpg']
 
   blackworkGallery: string[] = ['../assets/img/blackwork.jpg', '../assets/img/blackwork-2.jpg',]
 

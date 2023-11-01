@@ -1,17 +1,19 @@
-
 <div class="gallery-container" id="galeria">
-    <h2 class="collegiate">Galeria de trabajos</h2>
+  <h2 class="collegiate">Galeria de trabajos</h2>
 
-    <div class="gallery full-width" >
-        <img (click)="openModal(img)" [src]="img" alt="Imagen de la galería" *ngFor="let img of images.slice(0, initialImageCount)" data-aos="fade-up" data-aos-offset="100" loading="eager">
+  <div class="gallery full-width">
+    <img (click)="openModal(img)" [src]="img" alt="Imagen de la galería"
+      *ngFor="let img of randomImages.slice(0, initialImageCount)" data-aos="fade-up" data-aos-offset="100"
+      loading="eager">
+  </div>
+  <button class="show-more" *ngIf="initialImageCount < randomImages.length" (click)="showMoreImages()">Ver Más
+    <i-feather name="arrow-down"></i-feather></button>
+
+  <div class="modal" *ngIf="showModal">
+    <div class="modal-content">
+      <img class="modal-image" [src]="selectedImage" alt="Imagen en el modal">
+      <button class="close-button" (click)="closeModal()"><i-feather name="x-circle"></i-feather></button>
     </div>
-    <button class="show-more" *ngIf="initialImageCount < images.length" (click)="showMoreImages()">Ver Más <i-feather name="arrow-down"></i-feather></button>
-
-    <div class="modal" *ngIf="showModal">
-        <div class="modal-content">
-          <img class="modal-image" [src]="selectedImage" alt="Imagen en el modal">
-          <button class="close-button" (click)="closeModal()"><i-feather name="x-circle"></i-feather></button>
-        </div>
-      </div>
+  </div>
 
 </div>
