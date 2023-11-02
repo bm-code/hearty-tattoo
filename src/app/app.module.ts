@@ -23,7 +23,7 @@ import { MasonryGalleryComponent } from './components/masonry-gallery/masonry-ga
     FooterComponent,
     EntranceComponent,
     SobreMiComponent,
-    MasonryGalleryComponent
+    MasonryGalleryComponent,
   ],
   imports: [
     BrowserModule,

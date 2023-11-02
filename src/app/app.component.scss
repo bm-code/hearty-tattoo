@@ -89,6 +89,49 @@
     }
 }
 
+.camisetas {
+
+    .gallery-desktop {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .gallery-mobile {
+            display: none;
+        }
+    }
+
+    .camisetas__content {
+        text-align: center;
+
+        p {
+            max-width: 550px;
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+    }
+
+    .camisetas__row {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 1em;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-bottom: 1em;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 .contacto__left {
     .location {
         text-decoration: none;

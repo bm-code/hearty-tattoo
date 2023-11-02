@@ -1,12 +1,12 @@
-.sobre-mi {
+.camisetas {
     border-top: 1px solid white;
     padding-top: 2em;
 }
 
-.sobre-mi__container {
+.camisetas__container {
     column-gap: 2em;
 
-    .sobre-mi__container-img {
+    .camisetas__container-img {
         img {
             border-radius: 20px;
             margin-bottom: 1em;
@@ -14,7 +14,7 @@
 
     }
 
-    .sobre-mi__container-content {
+    .camisetas__container-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
