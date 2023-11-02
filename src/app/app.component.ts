@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     duration: 1000,
   }
 
-  lineaFinaGallery: string[] = ['../assets/img/linea-fina.jpg', '../assets/img/linea-fina-2.jpg', '../assets/img/linea-fina-3.jpg', '../assets/img/linea-fina-4.jpg', '../assets/img/linea-fina-5.jpg'];
+  lineaFinaGallery: string[] = ['../assets/img/linea-fina.jpg', '../assets/img/linea-fina-2.jpg', '../assets/img/linea-fina-3.jpg', '../assets/img/linea-fina-4.jpg', '../assets/img/linea-fina-5.jpg', '../assets/img/linea-fina-6.jpg'];
 
   composicionesGallery: string[] = ['../assets/img/composiciones.jpg']
 
